@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  app: # 이미지 이름 (마음대로 설정해도 됩니다)
+    build: . # Dockerfile이 있는 경로를 넣어주기 동일한 디렉토리일 경우 .
+    ports:
+      - "8080:8080" # docker CLI의 "-p 3000:3000" 과 같은 표현
